@@ -6,7 +6,7 @@ package config
 
 const (
 	//	defines ip and port address for server instance
-	SERVER_ADDR = "localhost:8080"
+	SERVER_ADDR = "localhost:3000"
 )
 
 /*  =========================
@@ -16,7 +16,7 @@ const (
 const (
 	USER_PATH            = "/read/usuario"
 	USER_ID_PATH         = "/read/usuario/{cod_usuario}"
-	USER_PATH_LOGIN      = "/read/usuario/login"
+	USER_PATH_LOGIN      = "api/read/usuario/login"
 	USER_PATH_CREATEUSER = "/read/usuario/createuser"
 	USER_PATH_DELETEUSER = "/read/usuario/deleteuser"
 )

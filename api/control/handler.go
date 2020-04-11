@@ -15,6 +15,7 @@ func (s *Server) CreateHandler() (r *mux.Router) {
 	r = s.Router
 
 	//	HOME
+	// ?????? /api ????? r.HandleFunc("/api", middlewares.SetMiddleJSON(middlewares.SetMiddleAuth(s.Home))).Methods(http.MethodGet)
 	r.HandleFunc("/", middlewares.SetMiddleJSON(middlewares.SetMiddleAuth(s.Home))).Methods(http.MethodGet)
 
 	/*	=========================
