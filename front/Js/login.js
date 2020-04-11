@@ -67,6 +67,9 @@ function entrar() {
 
   //função fetch para mandar o login e receber o token
   fetch('http://localhost:8080/read/usuario/login', {
+    headers: {
+      'Content-Type': 'application/json'
+    },
     method: 'POST',
     body: corpo,
   }).then(function (response) {
